@@ -24,10 +24,6 @@ jobs:
       - name: Build project
         run: npm run build
 
-      # ✅ Optional: Build Docker image (for validation)
-      - name: Docker build
-        run: docker build -t eventx-frontend .
-
       - name: Deploy to Firebase Hosting
         uses: FirebaseExtended/action-hosting-deploy@v0
         with:
